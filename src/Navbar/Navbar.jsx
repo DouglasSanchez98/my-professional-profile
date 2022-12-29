@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <>
 
-            <AppBar position='static' sx={{ background: "#063970" }}>
+            <AppBar position='static' sx={{ background: "#063970" }} >
                 <Toolbar>
                     {/* <IconButton size='large' edge='start' color='inherit' aria-label='logo'>
                         <CatchingPokemon />
@@ -32,7 +32,7 @@ const Navbar = () => {
                     {
                         isMatch ? (
                             <>
-                                <Typography sx={{fontSize:'1.5rem',paddingLeft:'2.5%'}}>
+                                <Typography sx={{ fontSize: '1.5rem', paddingLeft: '2.5%' }}>
                                     SHOPP
                                 </Typography>
                                 <DrawerComp />
@@ -45,11 +45,9 @@ const Navbar = () => {
                                     indicatorColor="primary">
                                     {
                                         PagesArr.map((page, index) => (
-                                            <Tab key={index} label={page}/>
+                                            <Tab key={index} label={page} />
                                         ))
                                     }
-
-
                                 </Tabs>
                                 <Button sx={{ marginLeft: "auto" }} variant='contained'> Login </Button>
                                 <Button sx={{ marginLeft: "10px" }} variant='contained'> SingUp </Button>
