@@ -1,4 +1,4 @@
-import { Button, AppBar, Toolbar, Tabs, IconButton, Typography, Stack, Tab, useMediaQuery, useTheme } from '@mui/material'
+import { Button, AppBar, Toolbar, Tabs, IconButton, Typography, Stack, Tab, useMediaQuery, useTheme, Grid } from '@mui/material'
 import { CatchingPokemon } from '@mui/icons-material';
 
 import React, { useState } from 'react'
@@ -12,6 +12,54 @@ const Navbar = () => {
     const isMatch = useMediaQuery(theme.breakpoints.down('md'));
     return (
         <>
+            <div >
+                <Grid container spacing={1}
+                    direction="row"
+                    justifyContent="center"
+                    alignItems="center">
+                    <Grid item xs={12} md={3}
+                        justify="center"
+                        align="center">
+                        <div>
+                            <img src="/LOGO1-blanco-dorado.png" width="200px" height="auto"   >
+
+                            </img>
+                        </div>
+
+                    </Grid>
+                    {
+                          isMatch ?(
+                            <>
+                            </>
+
+                          ):(
+                            <>
+                              <Grid item xs={9}
+                        justify="center"
+                        align="center">
+                        <div>
+                            <Stack direction="row" 
+                            spacing={2}  justifyContent="flex-end">
+                                <Typography sx={{ fontSize: '1.5rem', paddingRight: '2.5%' }}>
+                                    Contacto
+                                </Typography>
+                                <Typography sx={{ fontSize: '1.5rem', paddingRight: '2.5%' }}>
+                                    Contacto
+                                </Typography>
+                            </Stack>
+                        </div>
+
+
+                    </Grid>
+                            </>
+
+                          )
+                    }
+                  
+
+                </Grid>
+
+            </div>
 
             <AppBar position='static' sx={{ background: "#063970" }} >
                 <Toolbar>
@@ -39,6 +87,7 @@ const Navbar = () => {
                             </>
                         ) : (
                             <>
+
                                 <Tabs textColor="inherit"
                                     value={value}
                                     onChange={(e, value) => setValue(value)}
