@@ -10,13 +10,13 @@ const DrawerComp = () => {
 
   return (
     <>
-      <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)}>
+      <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)} >
         <List>
           {
             PagesArr.map((page,index)=>(
               <ListItemButton onClick={()=> setOpenDrawer(false)} key={index}>
               <ListItemIcon>
-                <ListItemText> {page} </ListItemText>
+                <ListItemText sx={{color:"#000000"}}> {page} </ListItemText>
               </ListItemIcon>
             </ListItemButton>
             ))

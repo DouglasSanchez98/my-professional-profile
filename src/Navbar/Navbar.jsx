@@ -1,6 +1,5 @@
 import { Button, AppBar, Toolbar, Tabs, IconButton, Typography, Stack, Tab, useMediaQuery, useTheme, Grid } from '@mui/material'
-import { CatchingPokemon } from '@mui/icons-material';
-
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import React, { useState } from 'react'
 import styledx from 'styled-components';
 import DrawerComp from './DrawerComp';
@@ -21,7 +20,7 @@ const Navbar = () => {
                         justify="center"
                         align="center">
                         <div>
-                            <img src="/LOGO1-blanco-dorado.png" width="200px" height="auto"   >
+                            <img src="/LOGO1-blanco-dorado.png" width="190px" height="auto"   >
 
                             </img>
                         </div>
@@ -40,12 +39,12 @@ const Navbar = () => {
                         <div>
                             <Stack direction="row" 
                             spacing={2}  justifyContent="flex-end">
-                                <Typography sx={{ fontSize: '1.5rem', paddingRight: '2.5%' }}>
-                                    Contacto
+                                 <WhatsAppIcon color="success" />
+                                <Typography sx={{ fontSize: '1.2rem', paddingRight: '2.5%' }}>
+                                
+                                    Contacto - 78421766
                                 </Typography>
-                                <Typography sx={{ fontSize: '1.5rem', paddingRight: '2.5%' }}>
-                                    Contacto
-                                </Typography>
+                                
                             </Stack>
                         </div>
 
@@ -81,7 +80,7 @@ const Navbar = () => {
                         isMatch ? (
                             <>
                                 <Typography sx={{ fontSize: '1.5rem', paddingLeft: '2.5%' }}>
-                                    SHOPP
+                                    Menu
                                 </Typography>
                                 <DrawerComp />
                             </>

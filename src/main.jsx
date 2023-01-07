@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Navbar from './Navbar/Navbar';
-//import SliderBanner from './SliderBanner/SliderBanner';
 import Carousel from './SliderBanner/SliderBanner';
+import MainTextExplain from './MainTextExplain/MainTextExplain';
 const carouselData = {
     timeoutTime: 5000,
     items: [
@@ -32,7 +32,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <Navbar />
         <Carousel {...carouselData} />,
-        {/*  <SliderBanner />*/}
+      <MainTextExplain/>
     </React.StrictMode>
 );
 
