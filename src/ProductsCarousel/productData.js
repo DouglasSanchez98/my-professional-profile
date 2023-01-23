@@ -59,13 +59,13 @@ export const responsive = {
       price: "$38.99",
       description: "Some text about the product..",
     },
-    {
+    /*{
       id: 6,
       imageurl:
         "https://media.istockphoto.com/id/836219790/es/foto/conjunto-de-materiales-de-construcci%C3%B3n.jpg?b=1&s=612x612&w=0&k=20&c=n4zaJhSCoE8F2aThSIH6oYrdMXtGvQ1PnuaidNibp7k=",
       name: "Otros",
       price: "$149.99",
       description: "Some text about the product..",
-    },
+    },*/
   
   ];

@@ -4,6 +4,7 @@ import Navbar from './Navbar/Navbar';
 import Carousel from './SliderBanner/SliderBanner';
 import MainTextExplain from './MainTextExplain/MainTextExplain';
 import ProductsCarousel from './ProductsCarousel/ProductsCarousel';
+import Footer from './Footer/Footer';
 const carouselData = {
     timeoutTime: 5000,
     items: [
@@ -35,6 +36,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Carousel {...carouselData} />,
       <MainTextExplain/>
       <ProductsCarousel/>
+      <Footer></Footer>
     </React.StrictMode>
 );
 

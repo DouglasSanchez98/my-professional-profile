@@ -20,7 +20,7 @@ const Navbar = () => {
                         justify="center"
                         align="center">
                         <div>
-                            <img src="/logoIver.png" width="190px" height="auto"   >
+                            <img src="/logoIver.png" width="150px" height="auto"   >
 
                             </img>
                         </div>
@@ -87,13 +87,13 @@ const Navbar = () => {
                         ) : (
                             <>
 
-                                <Tabs textColor="inherit"
+                                <Tabs textColor="white"
                                     value={value}
                                     onChange={(e, value) => setValue(value)}
                                     indicatorColor="primary">
                                     {
                                         PagesArr.map((page, index) => (
-                                            <Tab key={index} label={page} />
+                                            <Tab key={index} label={page}  />
                                         ))
                                     }
                                 </Tabs>
