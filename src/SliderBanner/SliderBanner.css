@@ -6,19 +6,20 @@
     display: flex;
     overflow: hidden;
     height: 100%;
+    
 }
 .carousel-prev, .carousel-next {
     position: absolute;
     cursor: pointer;
     z-index: 1;
     height: 100%;
-    width: 100px;
+    width: auto;
 }
 .carousel-prev {
     left: 0;
 }
 .carousel-next {
-    right: 0;
+    right: 50px;
 }
 .carousel-item {
     position: relative;
@@ -74,7 +75,7 @@
         display: inline-block;
         width: 1.5em;
         height: 1.5em;
-        border-right: 0.7em solid white;
+        border-right: 0.7em solid white ;
         border-top: 0.7em solid white;
         transform: rotate(45deg);
    }

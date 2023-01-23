@@ -20,7 +20,7 @@ const Navbar = () => {
                         justify="center"
                         align="center">
                         <div>
-                            <img src="/LOGO1-blanco-dorado.png" width="190px" height="auto"   >
+                            <img src="/logoIver.png" width="190px" height="auto"   >
 
                             </img>
                         </div>
