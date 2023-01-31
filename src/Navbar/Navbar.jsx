@@ -3,6 +3,8 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import React, { useState } from 'react'
 import styledx from 'styled-components';
 import DrawerComp from './DrawerComp';
+import ReactWhatsapp from 'react-whatsapp';
+
 const PagesArr = ["Inicio", "Materiales", "Servicios", "Contáctanos"];
 
 const Navbar = () => {
@@ -27,34 +29,37 @@ const Navbar = () => {
 
                     </Grid>
                     {
-                          isMatch ?(
+                        isMatch ? (
                             <>
                             </>
 
-                          ):(
+                        ) : (
                             <>
-                              <Grid item xs={9}
-                        justify="center"
-                        align="center">
-                        <div>
-                            <Stack direction="row" 
-                            spacing={2}  justifyContent="flex-end">
-                                 <WhatsAppIcon color="success" />
-                                <Typography sx={{ fontSize: '1.2rem', paddingRight: '2.5%' }}>
-                                
-                                    Contacto - 78421766
-                                </Typography>
-                                
-                            </Stack>
-                        </div>
+                                <Grid item xs={9}
+                                    justify="center"
+                                    align="center">
+                                    <div>
+                                        <Stack direction="row"
+                                            spacing={2} justifyContent="flex-end">
+                                            <WhatsAppIcon color="success" />
 
+                                            <ReactWhatsapp number="+59174923247" message="Saludos necesito Información" element='text' >
+                                                
+                                                <Typography sx={{ fontSize: '1.2rem', marginRight: '25px', cursor:'pointer' }}>
+                                                        Contacto - 78421766
+                                                    </Typography>
+                                             
+                                            </ReactWhatsapp>
 
-                    </Grid>
+                                        </Stack>
+                                    </div>
+
+                                </Grid>
                             </>
 
-                          )
+                        )
                     }
-                  
+
 
                 </Grid>
 
@@ -93,7 +98,7 @@ const Navbar = () => {
                                     indicatorColor="primary">
                                     {
                                         PagesArr.map((page, index) => (
-                                            <Tab key={index} label={page}  />
+                                            <Tab key={index} label={page} />
                                         ))
                                     }
                                 </Tabs>
