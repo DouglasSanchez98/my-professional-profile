@@ -2,7 +2,7 @@ import React from 'react'
 import { Drawer, List, ListItemButton, IconButton, ListItemIcon, ListItemText } from '@mui/material'
 import { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
-const PagesArr = ["Inicio", "Materiales", "Servicios", "Contáctanos","Login","Logout"];
+const PagesArr = ["Inicio"];
 
 
 const DrawerComp = () => {

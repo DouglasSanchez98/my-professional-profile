@@ -5,14 +5,16 @@ import Carousel from './SliderBanner/SliderBanner';
 import MainTextExplain from './MainTextExplain/MainTextExplain';
 import ProductsCarousel from './ProductsCarousel/ProductsCarousel';
 import Footer from './Footer/Footer';
-const carouselData = {
+import HeadBanner from './HeadBanner/HeadBanner';
+const carouselData = { 
     timeoutTime: 5000,
-    items: [
+    items: [ 
         {
             key: 1,
-            image: 'https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-            title: 'Slide #1',
-            caption: 'IMAGEN 1'
+           // image: 'https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+           image:'/PruebaBaner3.png',
+           //title: 'Slide #1',
+            //caption: 'IMAGEN 1'
         },
         {
             key: 2,
@@ -28,12 +30,21 @@ const carouselData = {
         }
     ]
 };
+const bannerImage={
+    item:[
+        {
+            key:1,
+            image:'/PruebaBaner3.png',
+        }
+    ]
+}
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
     <React.StrictMode>
         <Navbar />
-        <Carousel {...carouselData} />,
+        {/*  <Carousel {...carouselData} />,*/}
+        <HeadBanner {...bannerImage}/>
       <MainTextExplain/>
       <ProductsCarousel/>
       <Footer></Footer>

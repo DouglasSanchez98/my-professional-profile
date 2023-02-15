@@ -29,10 +29,10 @@ const ProductsCarousel = () => {
 
             */}
             {matches
-                ? <Typography variant='h2' sx={{ fontSize: '50px', fontWeight:'bold' }}>
+                ? <Typography variant='h2' sx={{ fontSize: '50px', fontWeight:'bold', marginTop:'8px' }}>
                     Lista de Materiales
                 </Typography>
-                : <Typography variant='h2' sx={{ fontSize: '30px', fontWeight:'bold' }}>
+                : <Typography variant='h2' sx={{ fontSize: '30px', fontWeight:'bold',marginTop:'8px' }}>
                     Lista de Materiales
                 </Typography>
 

@@ -5,7 +5,7 @@ import styledx from 'styled-components';
 import DrawerComp from './DrawerComp';
 import ReactWhatsapp from 'react-whatsapp';
 
-const PagesArr = ["Inicio", "Materiales", "Servicios", "Contáctanos"];
+const PagesArr = ["Inicio", "Materiales", "Servicios"];
 
 const Navbar = () => {
     const [value, setValue] = useState();
@@ -44,11 +44,11 @@ const Navbar = () => {
                                             <WhatsAppIcon color="success" />
 
                                             <ReactWhatsapp number="+59174923247" message="Saludos necesito Información" element='text' >
-                                                
-                                                <Typography sx={{ fontSize: '1.2rem', marginRight: '25px', cursor:'pointer' }}>
-                                                        Contacto - 78421766
-                                                    </Typography>
-                                             
+
+                                                <Typography sx={{ fontSize: '1.2rem', marginRight: '25px', cursor: 'pointer' }}>
+                                                    Información - 78421766
+                                                </Typography>
+
                                             </ReactWhatsapp>
 
                                         </Stack>
@@ -84,9 +84,12 @@ const Navbar = () => {
                     {
                         isMatch ? (
                             <>
-                                <Typography sx={{ fontSize: '1.5rem', paddingLeft: '2.5%' }}>
-                                    Menu
-                                </Typography>
+                                
+                                <Button sx={{ marginRight: "auto" }} variant='contained'>
+                                <ReactWhatsapp number="+59174923247" message="Saludos necesito Información" element='text'>
+                                Contacto
+                                </ReactWhatsapp>
+                                </Button>
                                 <DrawerComp />
                             </>
                         ) : (
@@ -102,8 +105,17 @@ const Navbar = () => {
                                         ))
                                     }
                                 </Tabs>
-                                <Button sx={{ marginLeft: "auto" }} variant='contained'> Login </Button>
+                                {/*<Button sx={{ marginLeft: "auto" }} variant='contained'> Login </Button>
                                 <Button sx={{ marginLeft: "10px" }} variant='contained'> SingUp </Button>
+                                */}
+                                
+                                <Button sx={{ marginLeft: "auto" }} variant='contained'>
+                                <ReactWhatsapp number="+59174923247" message="Saludos necesito Información" element='text'>
+                                Contacto
+                                </ReactWhatsapp>
+                                </Button>
+                                
+
 
                             </>
                         )

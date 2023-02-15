@@ -2,6 +2,10 @@
     width: 100vw;
     height: 40vh;
 }
+.responsive {
+    width: 100%;
+    height: auto;
+}
 .carousel {
     display: flex;
     overflow: hidden;
@@ -31,6 +35,7 @@
     overflow: hidden;
     transition: flex 1s ease;
 }
+
 .carousel-item img {
     position: absolute;
     min-width: 100%;
@@ -42,14 +47,14 @@
 .carousel-item.current {
     flex: 1;
 }
-.carousel-heading {
+/*.carousel-heading {
     display: inline-block;
     position: relative;
     background-color: #3498db;
     top: 50%;
     transform: translateY(-50%);
     padding: 10px;
-}
+}*/
 .carousel-heading h2, .carousel-heading h3 {
     padding: 0 20px;
     color: #ecf0f1;
