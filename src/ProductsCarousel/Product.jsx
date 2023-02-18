@@ -1,9 +1,12 @@
 import React from 'react'
 import ReactWhatsapp from 'react-whatsapp'
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+
 import {
     Button, AppBar, Toolbar, Tabs, IconButton,
     Typography, Stack, Tab, useMediaQuery, useTheme, Grid
 } from '@mui/material'
+import { borderColor } from '@mui/system';
 const Product = (props) => {
 
     return (
@@ -22,9 +25,23 @@ const Product = (props) => {
             <p> {props.description} </p>
             <p>
                 <button>
-                    <ReactWhatsapp number="+59174923247" message={"Saludos quiero comprar " + props.name} element='text'>
-                        Contacto
-                    </ReactWhatsapp>
+                    <Grid container>
+                        <Grid item xs={6} container justifyContent='flex-end' >
+                            <WhatsAppIcon color="success" sx={{marginRight:'25%'}}  />
+
+                        </Grid>
+                        <Grid item xs={6} container justifyContent='flex-start'>
+                            
+                                <ReactWhatsapp number="+59174923247" message={"Saludos quiero comprar " + props.name} 
+                                element='text' style={{marginTop:'3px', marginLeft:'-20%'}}>
+                                    Solicitar
+                                </ReactWhatsapp>
+                           
+                        </Grid>
+
+                    </Grid>
+
+
                 </button>
             </p>
         </div>

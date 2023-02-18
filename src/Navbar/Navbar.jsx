@@ -5,7 +5,7 @@ import styledx from 'styled-components';
 import DrawerComp from './DrawerComp';
 import ReactWhatsapp from 'react-whatsapp';
 
-const PagesArr = ["Inicio", "Materiales", "Servicios"];
+const PagesArr = ["Inicio"];
 
 const Navbar = () => {
     const [value, setValue] = useState();
