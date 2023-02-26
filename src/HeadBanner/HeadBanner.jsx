@@ -32,8 +32,8 @@ const HeadBanner = () => {
     return(
         <div>
                 {matches
-                    ? <img src='/bannerDesktop2.png' role="presentation" className='responsive' />
-                    : <img src='/bannerMobile.png' role="presentation" className='responsive' />
+                    ? <img src='https://imagess3projects.s3.sa-east-1.amazonaws.com/IverCompany/bannerDesktop2.png' role="presentation" className='responsive' />
+                    : <img src='https://imagess3projects.s3.sa-east-1.amazonaws.com/IverCompany/bannerMobile.png' role="presentation" className='responsive' />
                 }
 
 

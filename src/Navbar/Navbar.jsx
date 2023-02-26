@@ -22,7 +22,7 @@ const Navbar = () => {
                         justify="center"
                         align="center">
                         <div>
-                            <img src="/logoIver.png" width="150px" height="auto"   >
+                            <img src="https://imagess3projects.s3.sa-east-1.amazonaws.com/IverCompany/logoIver.png" width="150px" height="auto"   >
 
                             </img>
                         </div>
